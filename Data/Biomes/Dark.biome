@@ -1,0 +1,46 @@
+Biomes
+{
+	Lowlands
+	{
+		script = "LowlandsBiome.lua"
+		weight = 7
+		minSize = 7
+		maxSize = 7
+
+		Restrictions
+		{
+			PolarBiome
+		}
+	}
+
+	Midlands
+	{
+		script = "MidlandsBiome.lua"
+		weight = 8
+		minSize = 7
+		maxSize = 7
+
+		Restrictions
+		{
+			Jungle
+			Desert
+		}
+	}
+
+	Highlands
+	{
+		script = "HighlandsBiome.lua"
+		weight = 6
+		minSize = 5
+		maxSize = 5
+		Restrictions
+		{
+			Jungle
+			BambooForest
+			RollingHills
+			Swamplands
+			Desert
+			Plains
+		}
+	}
+}

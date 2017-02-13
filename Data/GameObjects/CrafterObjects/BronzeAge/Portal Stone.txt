@@ -1,0 +1,97 @@
+GameObjects
+{
+	PlaceableObject
+	{
+		Portal Stone
+		{
+			Tag = "BronzeAge"
+
+			Transform
+			{
+			}
+
+			Script
+			{
+				file = "Scripts/Objects/PortalStone.lua"
+				class = "PortalStone"
+				
+				arguments
+				{
+					encumbrance = 15.0
+					failChance = 0.1
+
+					dataMetricCategory = "Alchemical"
+					UBPcraft = 4
+					LBPcraft = 4
+					XPcraft = 8
+				}
+			}
+
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/CrafterObjects/MagicStonePillar.obj"
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/MagicStonePillar_Diff3.png"
+					"diffuse_off" = "Models/PlaceableObjects/CrafterObjects/MagicStonePillar_Diff3.png"
+					"diffuse_on" = "Models/PlaceableObjects/CrafterObjects/MagicStonePillar_Diff.png"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/MagicStonePillar_Norm.png"
+				}
+				Glow
+				{
+					"glow_on" = "Models/PlaceableObjects/CrafterObjects/MagicStonePillar_Glow.png"
+				}
+
+			}
+
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 80.0
+						convex = 0
+						material = "WOOD"
+						mesh = "Models/PlaceableObjects/CrafterObjects/MagicStonePillar.obj"
+					}
+				}
+
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+
+			Placeable
+			{
+				name = "Portal Stone"
+				icon = "PortalStone"
+				minScale = 1
+				maxScale = 1
+
+				category = "Stone"
+				tier = 3
+				resource = 1
+				maxStackCount = 1
+				placeWithNoPhysics = 1
+				
+				survivalFaceCamera = 1
+				tetherDistanceModifier = 2.0
+																
+				placementSound = "StonePlace"
+			}
+
+			Children
+			{
+				Wisp Blue Body Emitter
+				{
+					offset = <0.0, 4.25, 0.0>
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,93 @@
+﻿
+GameObjects
+{
+	Equipable
+	{
+		Wood Branch
+		{
+			Tag = "Harvestables"
+			
+			Transform
+			{
+			}
+			Script
+			{
+				file = "Scripts/Objects/Equipable.lua"
+				class = "Equipable"
+
+				arguments
+				{
+					encumbrance = 0.7
+
+					dataMetricCategory = "Terrain Resource"
+					UBPcraft = 2
+					LBPcraft = 1
+					XPcraft = 3
+
+					Affects
+					{
+						"Flesh" = 2
+						"Vegetation" = 2
+					}			
+				}
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Harvestables/woodBranch.obj"
+				dontCastShadows = 1.0
+				
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Harvestables/woodBranchLightwood_diff.tga"
+					1 = "Models/PlaceableObjects/Harvestables/woodBranchLightwood_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Harvestables/woodBranch_norm.tga"
+					1 = "Models/PlaceableObjects/Harvestables/woodBranch_diff.tga"
+				}
+			}
+			#RigidBody
+			#{
+			#	activePhysics = 1
+			#	mass = 4.0
+			#	friction = 1.0
+			#}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 5.0
+						convex = 0
+						material = "WOOD"
+					}
+				}
+
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Equipable
+			{
+				name = "Wood Branch"
+				icon = "woodBranch_L"
+				minScale = 0.75
+				maxScale = 1.25
+
+				category = "Wood"
+				tier = 2
+				resource = 1
+				maxStackCount = 10.0
+				#craftingArchetype = "Crude Handle"
+
+				damageToCharacters = 6.0
+				damageToObjects = 5.0
+
+				placementSound = "WoodPlace"
+			}
+		}
+	}
+}

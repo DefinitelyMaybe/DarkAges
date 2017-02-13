@@ -1,0 +1,29 @@
+{
+  "Name": "DarkAges",
+  "Summary": "Expanding survival.",
+  "Description": "",
+  "Website": "Devotus.github.io/TUG-DarkAges",
+  "Icon": "",
+  "Active": true,
+  "TargetGame": {
+    "Name": "TUG"
+  },
+  "Authors": [
+    {
+      "GitUsername": "DefinitelyMaybe",
+      "NkUsername": "Rawr",
+      "Email": ""
+    }
+  ],
+  "Script": {
+    "File": "Scripts/DarkAgesModScript.lua",
+    "Class": "DarkAgesModScript"
+  },
+  "Dependencies": [],
+  "Categories": [
+    "Nature",
+    "Magic",
+    "Generation"
+  ],
+  "Media": []
+}

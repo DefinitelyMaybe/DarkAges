@@ -1,0 +1,84 @@
+﻿
+GameObjects
+{
+	Equipable
+	{
+		Forked Stick
+		{
+			Tag = "Harvestables"
+			
+			Transform
+			{
+			}
+			Script
+			{
+				file = "Scripts/Objects/Equipable.lua"
+				class = "Equipable"
+			
+				arguments
+				{
+					encumbrance = 0.15
+
+					dataMetricCategory = "Terrain Resource"
+					UBPcraft = 2
+					LBPcraft = 1
+					XPcraft = 3
+
+					Affects
+					{
+						"Vegetation" = 1
+					}			
+				}
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Harvestables/woodStickForked.obj"
+				dontCastShadows = 1.0
+			
+				Diffuse
+				{
+					0 = "Character/Tools/0axe_ALV_New_diff.tga"
+					1 = "Character/Tools/0axe_ALV_New_diff.tga"
+				}
+			}
+			#RigidBody
+			#{
+			#	activePhysics = 1
+			#	mass = 1.0
+			#	friction = 100.0
+			#}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 5.0
+						convex = 0
+						material = "WOOD"
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Equipable
+			{
+				name = "Forked Stick"
+				icon = "woodStickForkedLightwood"
+				minScale = 1.0
+				maxScale = 1.0
+
+				category = "Wood"
+				tier = 0
+				resource = 1
+				maxStackCount = 10.0
+				damageToObjects = 2.0
+				#craftingArchetype = "Crude Handle"
+
+				placementSound = "SandPlace"
+			}
+		}
+	}
+}

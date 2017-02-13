@@ -1,0 +1,40 @@
+PortalStone Mod Recipes
+{
+	Portal Stone Recipe
+	{
+		Index = 1
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+
+		LuaData
+		{
+			craftTime = 5.0
+			priority = 1.0
+
+			craftingActionName = "Enchanting... "
+			craftingDisplayName = "Portal Stone"
+			
+			Components
+			{
+				TheStonePart
+				{
+					"Cobblestone" = 20
+				}
+				TheMagicPart
+				{
+					"Black Rock" = 1
+				}
+			}
+
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 3
+			}
+			
+			Results
+			{
+				"Portal Stone" = 1
+			}
+		}
+	}
+}

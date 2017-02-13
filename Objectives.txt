@@ -1,0 +1,3 @@
+1 - Change stravation; inability to sprint, blurring/distortion of vision, passing out.
+
+2 - Add some ruins into generation.

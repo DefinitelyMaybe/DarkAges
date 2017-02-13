@@ -1,0 +1,96 @@
+﻿
+GameObjects
+{
+	Equipable
+	{
+		Wood Shaft
+		{
+			Tag = "Harvestables"
+			
+			Transform
+			{
+			}
+			
+			Script
+			{
+				file = "Scripts/Objects/Equipable.lua"
+				class = "Equipable"
+			
+				arguments
+				{
+					encumbrance = 0.4
+
+					CriticalHitPoints = 8.0
+					CreakingSound = "ItemCreak"
+					BreakSound = "ItemBreak"
+
+					Affects
+					{
+						"Flesh" = 2
+						"Vegetation" = 2
+					}
+				}
+			}
+			
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Harvestables/woodStaff.obj"
+				dontCastShadows = 1.0
+			
+				Diffuse
+				{
+					0 = "Character/Weapons/0spearB_WLV_New_diff.tga"
+				}
+			
+				Normal
+				{
+					0 = "Character/Weapons/0spearB_norm.tga"
+				}
+			}
+			
+			#RigidBody
+			#{
+			#	activePhysics = 1
+			#	mass = 1.0
+			#	friction = 100.0
+			#}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 5.0
+						convex = 0
+					}
+				}
+
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			
+			Equipable
+			{
+				name = "Wood Staff"
+				icon = "woodStaffLightwood"
+				minScale = 1.0
+				maxScale = 1.0
+
+				durability = 100.0
+
+				category = "Wood"
+				tier = 0
+				resource = 1
+				maxStackCount = 10.0
+				damageToCharacters = 4.0
+				damageToObjects = 5.0
+				
+				craftingArchetype = "Long Shaft"
+
+				placementSound = "SandPlace"
+			}
+		}
+	}
+}

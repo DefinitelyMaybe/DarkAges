@@ -1,0 +1,39 @@
+root
+{
+	Layers
+	{
+		LowlandsBiome
+		{
+			Mud = 10
+			Dirt = 15
+			Sand = 20
+			Gravel = 25
+			Cliff Rock Light = 40
+			Cliff Rock Dark = 60
+			Rock = 500
+			Obsidian = 1000
+		}
+
+		MidlandsBiome
+		{
+			Mud = 10
+			Dirt = 15
+			Gravel = 25
+			Cliff Rock Light = 40
+			Cliff Rock Dark = 60
+			Rock = 500
+			Obsidian = 1000
+		}
+
+		HighlandsBiome
+		{
+			Mud = 10
+			Dirt = 15
+			Gravel = 25
+			Cliff Rock Light = 40
+			Cliff Rock Dark = 60
+			Rock = 500
+			Obsidian = 1000
+		}
+	}
+}

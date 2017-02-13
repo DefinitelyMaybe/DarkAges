@@ -1,0 +1,44 @@
+Generators
+{
+	Survival v2
+	{
+		SpawnBiome = "Midlands"
+		Lowlands
+		Midlands
+		Highlands
+		Jungle
+		BambooForest
+		DeepForest
+		PineyWoods
+		RollingHills
+		Swamplands
+		Plains
+		Bedrock
+		Desert
+		RedCliffs
+		PolarBiome
+	}
+
+	Darker lands
+	{
+		SpawnBiome = "Lowlands"
+		Lowlands
+		Midlands
+		Highlands
+	}
+	
+	Only Lowlands
+	{
+		Lowlands
+	}
+
+	Only Midlands
+	{
+		Midlands
+	}
+
+	Only Highlands
+	{
+		Highlands
+	}
+}
